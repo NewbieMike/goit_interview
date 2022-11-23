@@ -1,0 +1,72 @@
+@import "./settings.scss";
+
+.landingPage {
+  position: relative;
+  height: 98vh;
+  width: 100%;
+}
+.langingPage_image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $mainGradient;
+  z-index: 2;
+}
+.langingPage_image {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.link_button.landingPage_button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  text-transform: uppercase;
+}
+
+.landingPage {
+  h3 {
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+  }
+  h2 {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+    margin: 0;
+    line-height: 85px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .landingPage {
+    h3 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 38px;
+      line-height: 48px;
+      top: 46%;
+    }
+  }
+}

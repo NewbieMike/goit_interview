@@ -1,0 +1,145 @@
+.services h2 {
+  text-align: center;
+}
+
+.services h3 {
+  text-align: center;
+}
+
+.services_cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service_card {
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+}
+
+.service_card img {
+  flex: 3;
+  width: 44px;
+  height: 44px;
+  margin-top: 20px;
+  fill: #edd788 !important;
+}
+
+.service_card .service_card_description {
+  flex: 9;
+}
+
+.service_card .service_card_description h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.service_card .service_card_description p {
+  color: gray;
+  opacity: 0.8;
+}
+
+.team_slogan {
+  padding: 20px 0;
+  color: gray;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.team_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team_card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.card_name {
+  margin: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card_position {
+  text-align: center;
+  font-size: 14;
+  opacity: 0.8;
+  color: gray;
+}
+
+.team_card_image_container {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background-color: #95e1d3;
+}
+
+.team_card_image_container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.team_card_image_container .image_overlay_content {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(232, 135, 131, 0.85) 0%, rgba(237, 215, 136, 0.85) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team_card_image_container .image_overlay_content a {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: #edd788;
+}
+
+.team_card_image_container .image_overlay_content a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  filter: invert(70%) sepia(44%) saturate(713%) hue-rotate(309deg) brightness(90%) contrast(102%);
+}
+
+.team_card_image_container .image_overlay_content a:hover {
+  background-color: #e88783;
+}
+
+.team_card_image_container .image_overlay_content a:hover img {
+  filter: invert(97%) sepia(100%) saturate(0%) hue-rotate(276deg) brightness(102%) contrast(103%);
+}
+
+.team_card:hover .team_card_image_container .employee_img {
+  top: -10px;
+  left: -10px;
+}
+
+.team_card:hover .image_overlay_content {
+  opacity: 1;
+  display: flex;
+  top: -10px;
+  left: -10px;
+}
+
+/*# sourceMappingURL=services.css.map */
